@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REgister page</title>
+</head>
+<body>
+<h1>Register for your <i>Doom</i> </h1>
+<a href="{{url_for('home')}}">Home page</a>
+<br>
+<a href="{{url_for('login')}}">Login page</a>
+<br>
+<form method="POST">
+	{{ form.hidden_tag() }}
+	{{ form.username }}
+	{{ form.password }}
+	{{ form.submit }}
+</form>
+
+
+</body>
+</html>
